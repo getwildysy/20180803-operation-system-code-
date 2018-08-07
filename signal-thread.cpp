@@ -54,7 +54,7 @@ int main(int argc,char *argv[]){
 		if(strcmp(argv[i],"main")==0)
 			doblock = true;
 		else if (argv[i][0]=='a')
-			alarmthread = argv[i][1];
+			alarmthread = argv[i][1]-'0';
 		else {
 			id =atoi(argv[i]);
 			block[id]= true;
